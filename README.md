@@ -43,11 +43,24 @@ Non-linearity is crucial for the network to learn complex patterns. Three primar
 The network follows a standard 2-layer architecture:
 
 1.  **Hidden Layer:**
-    $$Z^{[1]} = X \cdot W^{[1]} + b^{[1]}$$
-    $$A^{[1]} = \sigma(Z^{[1]})$$
+
+    $$
+    Z^{[1]} = X \cdot W^{[1]} + b^{[1]}
+    $$
+
+    $$
+    A^{[1]} = \sigma(Z^{[1]})
+    $$
+
 2.  **Output Layer:**
-    $$Z^{[2]} = A^{[1]} \cdot W^{[2]} + b^{[2]}$$
-    $$\hat{Y} = Z^{[2]}$$
+
+   $$
+   Z^{[2]} = A^{[1]} \cdot W^{[2]} + b^{[2]}
+   $$
+
+   $$
+   \hat{Y} = Z^{[2]}
+   $$
 
 ### Backpropagation & The Chain Rule
 
