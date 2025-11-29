@@ -16,16 +16,16 @@ The Universal Approximation Theorem states that a feedforward network with a sin
 
 Formally, let $\sigma(z)$ be a non-constant, bounded, and continuous activation function. Let $I_m$ denote the $m$-dimensional unit hypercube $[0, 1]^m$. The space of continuous functions on $I_m$ is denoted by $C(I_m)$.
 
-Given any function $f \in C(I_m)$ and error tolerance $\varepsilon > 0$, there exists an integer $N$ (neurons) and parameters $v_i, b_i, w_i$ such that the function $F(x)$:
+Given any function $f \in C(I_m)$ and error tolerance $\varepsilon > 0$, there exists an integer $N$ (neurons) and parameters $v_i, b_i, w_i$ such that the function $g(x)$:
 
 $$
-F(x) = \sum_{i=1}^{N} v_i \sigma(w_i^T x + b_i)
+g(x) = \sum_{i=1}^{N} v_i \sigma(w_i^T x + b_i)
 $$
 
 satisfies:
 
 $$
-| F(x) - f(x) | < \varepsilon \quad \forall x \in I_m
+| g(x) - f(x) | < \varepsilon \quad \forall x \in I_m
 $$
 
 ### Activation Functions
