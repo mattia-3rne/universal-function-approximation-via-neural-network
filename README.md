@@ -55,7 +55,10 @@ To train the network, we minimize the **Mean Squared Error (MSE)** loss function
 
 **Step A: Error at Output**<br>
 First, we calculate the derivative of the loss with respect to the output layer's input ($Z^{[2]}$). Since the output activation is linear for regression:
-$$\delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)$$
+
+$$
+\delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)
+$$
 
 **Step B: Propagating to Hidden Layer**<br>
 We propagate the error backwards to the hidden layer. This requires the **Hadamard product** ($\odot$), which is element-wise multiplication, to apply the derivative of the activation function:
