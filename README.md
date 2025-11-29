@@ -45,7 +45,7 @@ The network follows a standard 2-layer architecture:
 1.  **Hidden Layer:**
     $$Z^{[1]} = X \cdot W^{[1]} + b^{[1]}$$
     $$A^{[1]} = \sigma(Z^{[1]})$$
-2.  **Output Layer (Linear):**
+2.  **Output Layer:**
     $$Z^{[2]} = A^{[1]} \cdot W^{[2]} + b^{[2]}$$
     $$\hat{Y} = Z^{[2]}$$
 
@@ -55,24 +55,16 @@ To train the network, we minimize the **Mean Squared Error (MSE)** loss function
 
 **Step A: Error at Output**<br>
 First, we calculate the derivative of the loss with respect to the output layer's input ($Z^{[2]}$). Since the output activation is linear for regression:
-$$
-\delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)
-$$
+$$\delta^{[2]} = \frac{\partial J}{\partial Z^{[2]}} = (\hat{Y} - Y)$$
 
 **Step B: Propagating to Hidden Layer**<br>
 We propagate the error backwards to the hidden layer. This requires the **Hadamard product** ($\odot$), which is element-wise multiplication, to apply the derivative of the activation function:
-$$
-\delta^{[1]} = (\delta^{[2]} \cdot W^{[2]T}) \odot \sigma'(Z^{[1]})
-$$
+$$\delta^{[1]} = (\delta^{[2]} \cdot W^{[2]T}) \odot \sigma'(Z^{[1]})$$
 
 **Step C: Gradients for Updates**<br>
 Finally, we calculate the gradients for the weights and biases:
-$$
-\frac{\partial J}{\partial W^{[2]}} = A^{[1]T} \cdot \delta^{[2]}
-$$
-$$
-\frac{\partial J}{\partial W^{[1]}} = X^T \cdot \delta^{[1]}
-$$
+$$\frac{\partial J}{\partial W^{[2]}} = A^{[1]T} \cdot \delta^{[2]}$$
+$$\frac{\partial J}{\partial W^{[1]}} = X^T \cdot \delta^{[1]}$$
 
 ---
 
