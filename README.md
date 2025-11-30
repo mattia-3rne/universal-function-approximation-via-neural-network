@@ -123,17 +123,10 @@ This repository contains three separate Jupyter Notebooks, each implementing the
     pip install -r requirements.txt
     ```
 
-### Running the Analysis
-
-1.  Start Jupyter Notebook:
+3.  **Launch Jupyter Notebook**:
     ```bash
     jupyter notebook
     ```
-
-2.  Open any of the three notebooks (`BGD.ipynb`, `SGD.ipynb`, or `MBGD.ipynb`).
-
-3.  **Run All Cells**:
-    The notebooks are self-contained. You can modify the `target_function` variable in the configuration cell to change the function being approximated (e.g., change `np.sin(x)` to `x**2`).
 
 ---
 
