@@ -1,4 +1,4 @@
-# Universal Function Approximation via Neural Networks
+# Universal Function Approximation via Neural Network
 
 ## 📊 Project Overview
 
@@ -115,7 +115,7 @@ This repository contains three separate Jupyter Notebooks, each implementing the
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/mattia-3rne/universal-function-approximation-via-neural-networks.git
+    git clone https://github.com/mattia-3rne/universal-function-approximation-via-neural-network.git
     ```
 
 2.  **Install dependencies**:
