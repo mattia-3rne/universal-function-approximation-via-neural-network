@@ -132,8 +132,8 @@ This repository contains three separate Jupyter Notebooks, each implementing the
 
 ## 📂 Project Structure
 
-* `requirements.txt`: Python package dependencies.
-* `MBGD.ipynb`: Mini-Batch Gradient Descent.
 * `SGD.ipynb`: Stochastic Gradient Descent.
 * `BGD.ipynb`: Batch Gradient Descent.
+* `MBGD.ipynb`: Mini-Batch Gradient Descent.
+* `requirements.txt`: Python package dependencies.
 * `README.md`: Project documentation.
